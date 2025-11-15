@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  cs16-server:
+    build: .
+    container_name: cs16-server
+    restart: unless-stopped
+    ports:
+      - "27015:27015/udp"  # Porta principal do servidor
+      - "27020:27020/udp"  # SourceTV
+      - "26900:26900/udp"  # Porta de autenticação Steam
+    volumes:
+      - ./configs:/home/steam/hlds/cstrike/configs:ro
+      - ./maps:/home/steam/hlds/cstrike/maps
+      - ./logs:/home/steam/hlds/cstrike/logs
+      - hlds_data:/home/steam/hlds
+    environment:
+      - SERVER_NAME=CS 1.6 Server
+      - MAP=de_dust2
+      - MAXPLAYERS=32
+      - START_MONEY=800
+      - BUY_TIME=0.25
+      - FRIENDLY_FIRE=0
+      - RCON_PASSWORD=changeme123
+    stdin_open: true
+    tty: true
+    networks:
+      - cs16_network
+
+networks:
+  cs16_network:
+    driver: bridge
+
+volumes:
+  hlds_data:

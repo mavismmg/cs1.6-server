@@ -1,0 +1,25 @@
+# Gitignore para servidor CS 1.6
+
+# Logs
+logs/*.log
+
+# Dados do servidor (volume Docker)
+hlds_data/
+
+# Mapas baixados (mantém estrutura)
+maps/*.bsp
+!maps/.gitkeep
+
+# Temporários
+*.tmp
+*.bak
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

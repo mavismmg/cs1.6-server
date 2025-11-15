@@ -1,0 +1,46 @@
+// Message of the Day (MOTD) - CS 1.6 Server
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-vindo ao Servidor CS 1.6</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff6600;
+            text-align: center;
+        }
+        .rules {
+            background-color: #2a2a2a;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .rule {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎮 Bem-vindo ao Servidor Counter-Strike 1.6 🎮</h1>
+    
+    <div class="rules">
+        <h2>📋 Regras do Servidor:</h2>
+        <div class="rule">1. Respeite todos os jogadores</div>
+        <div class="rule">2. Não use cheats ou hacks</div>
+        <div class="rule">3. Não faça spam no chat</div>
+        <div class="rule">4. Não faça teamkill intencional</div>
+        <div class="rule">5. Divirta-se e jogue limpo!</div>
+    </div>
+    
+    <p style="text-align: center; margin-top: 30px;">
+        <strong>Bom jogo e boa sorte!</strong>
+    </p>
+</body>
+</html>
