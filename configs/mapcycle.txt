@@ -13,3 +13,6 @@ cs_italy
 cs_office
 cs_assault
 cs_militia
+
+// Aim Maps
+aim_map
